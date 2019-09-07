@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C7CC252D-2AE2-42F7-B662-2DC15FB73D8A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ClientUI", "src\ClientUI\ClientUI.fsproj", "{0D28ABF2-F931-41B5-B40F-5F48559F32EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D28ABF2-F931-41B5-B40F-5F48559F32EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D28ABF2-F931-41B5-B40F-5F48559F32EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D28ABF2-F931-41B5-B40F-5F48559F32EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D28ABF2-F931-41B5-B40F-5F48559F32EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D28ABF2-F931-41B5-B40F-5F48559F32EF} = {C7CC252D-2AE2-42F7-B662-2DC15FB73D8A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F78C55C-EA4E-4AA8-901D-19DDB74347C3}
+	EndGlobalSection
+EndGlobal
