@@ -8,7 +8,7 @@ let main argv =
     
     async {
  
-        let endpointName = "Client"
+        let endpointName = "ClientUI"
         Console.Title <- endpointName
 
         let endpointConfiguration = new EndpointConfiguration(endpointName)
