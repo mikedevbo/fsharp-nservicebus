@@ -6,14 +6,13 @@ open NServiceBus
 [<EntryPoint>]
 let main argv =
     
-    async {
- 
-        let endpointName = "ClientUI"
-        Console.Title <- endpointName
+    let endpointName = "ClientUI"
+    Console.Title <- endpointName
 
-        let endpointConfiguration = new EndpointConfiguration(endpointName)
-        
-        let transport = endpointConfiguration.UseTransport<LearningTransport>()
+    let endpointConfiguration = new EndpointConfiguration(endpointName)
+    let transport = endpointConfiguration.UseTransport<LearningTransport>()    
+
+    async {
 
         let! endpointInstance = Endpoint.Start(endpointConfiguration) |> Async.AwaitTask
             
@@ -23,5 +22,5 @@ let main argv =
         do! endpointInstance.Stop() |> Async.AwaitTask
 
     } |> Async.RunSynchronously
-    
+
     0 // return an integer exit code
