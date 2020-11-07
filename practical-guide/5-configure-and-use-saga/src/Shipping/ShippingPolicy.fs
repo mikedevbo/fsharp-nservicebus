@@ -17,6 +17,7 @@ type ShippingPolicy() =
         override this.ConfigureHowToFindSaga(mapper: SagaPropertyMapper<ShippingPolicyData>) =
             mapper.ConfigureMapping<OrderPlaced>(fun message -> message.OrderId :> obj).ToSaga(fun sagaData -> sagaData.OrderId :> obj)
             mapper.ConfigureMapping<OrderBilled>(fun message -> message.OrderId :> obj).ToSaga(fun sagaData -> sagaData.OrderId :> obj)
+
     static member log = LogManager.GetLogger<ShippingPolicy>()
 
     interface IAmStartedByMessages<OrderPlaced> with
